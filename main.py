@@ -1,6 +1,7 @@
 import logging
 import asyncio
 import json
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -219,3 +220,4 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
