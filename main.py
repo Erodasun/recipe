@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 
 # Твой токен, полученный у BotFather
-API_TOKEN = '8300359964:AAFb8T33gtBU-UFdGlm40J8-pWS6jU1MJFw'
+API_TOKEN = os.environ.get('API_TOKEN')
 
 # Настраиваем логирование
 logging.basicConfig(level=logging.INFO)
@@ -217,4 +217,5 @@ async def main():
 
 
 if __name__ == "__main__":
+
     asyncio.run(main())
